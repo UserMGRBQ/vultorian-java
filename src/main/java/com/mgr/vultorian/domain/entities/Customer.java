@@ -9,8 +9,8 @@ import lombok.*;
 @Getter
 @Setter
 @Builder
-@Table(name = "tb_cliente")
-public class Cliente {
+@Table(name = "tb_customer")
+public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
