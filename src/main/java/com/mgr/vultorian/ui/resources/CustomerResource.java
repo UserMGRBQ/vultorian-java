@@ -22,4 +22,9 @@ public class CustomerResource {
     public ResponseEntity<Response<CustomerDto>> getById(@PathVariable Integer id) {
         return ResponseEntity.ok(service.getById(id));
     }
+
+    @GetMapping("/document/{doc}")
+    public ResponseEntity<Response<CustomerDto>> getByDoc(@PathVariable String doc) {
+        return ResponseEntity.ok(service.getCustomerByDocument(doc));
+    }
 }
